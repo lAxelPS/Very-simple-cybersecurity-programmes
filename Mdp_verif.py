@@ -25,7 +25,7 @@ def verif_mdp():
     if x<=1:
         print('mot de passe faible, veuillez recommencer')
         return(verif_mdp())
-    elif x==2:
+    elif x<4:
         print('mot de passe moyen, veuillez recommencer')
         return(verif_mdp())
     else:
