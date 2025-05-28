@@ -7,7 +7,7 @@ def verif_mdp():
     numbers=['0','1','2','3','4','5','6','7','8','9']
     c=[0,0,0,0]
     mdp=getpass.getpass()
-    if len(mdp)>=12:
+    if len(mdp)<12:
         print('mot de passe faible, veuillez recommencer')
         return(verif_mdp())
     for i in mdp:
